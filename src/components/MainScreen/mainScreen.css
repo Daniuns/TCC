@@ -1,0 +1,52 @@
+:local(.component) {
+  height: 100%;
+  width: 100%; }
+  :local(.component) .App {
+    height: 100%; }
+  :local(.component) .main-container {
+    height: 100%;
+    display: flex;
+    background-color: #dcc7c0; }
+    @media screen and (max-width: 600px) {
+      :local(.component) .main-container {
+        height: 100%;
+        display: flex;
+        background-color: #dcc7c0;
+        flex-direction: column-reverse;
+        align-items: center; } }
+  :local(.component) .begin-stories {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; }
+    @media screen and (max-width: 600px) {
+      :local(.component) .begin-stories {
+        height: 20%; } }
+    :local(.component) .begin-stories .btn-options {
+      margin: 0 0 45% 0; }
+      :local(.component) .begin-stories .btn-options p {
+        cursor: pointer; }
+  :local(.component) .title-description {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    @media screen and (max-width: 600px) {
+      :local(.component) .title-description {
+        height: 80%; } }
+    :local(.component) .title-description .description {
+      width: 50%; }
+      @media screen and (max-width: 600px) {
+        :local(.component) .title-description .description {
+          width: 100%; } }
+    @media screen and (max-width: 600px) {
+      :local(.component) .title-description .photo {
+        width: 100%;
+        display: flex;
+        justify-content: center; } }
+    :local(.component) .title-description .photo img {
+      width: 100%;
+      max-width: 500px;
+      height: auto; }

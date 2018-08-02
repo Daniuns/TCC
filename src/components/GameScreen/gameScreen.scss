@@ -1,0 +1,30 @@
+:local(.component){
+    height: 100%;
+    .container{
+        height: 100%;
+        .content{
+            display: flex;
+            flex-direction: row-reverse;
+            height: 100%;
+
+            .description-scene{
+                width: 60%;
+                height: 100%;
+            }
+        
+            .content-options{
+                display: flex;
+                align-items: flex-end;
+                width: 40%;
+                height: 100%;
+                .options{
+                    margin: 0 0 100px 50px;
+                    width: 100%;
+                    p{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

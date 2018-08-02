@@ -1,0 +1,21 @@
+:local(.component) {
+  height: 100%; }
+  :local(.component) .container {
+    height: 100%; }
+    :local(.component) .container .content {
+      display: flex;
+      flex-direction: row-reverse;
+      height: 100%; }
+      :local(.component) .container .content .description-scene {
+        width: 60%;
+        height: 100%; }
+      :local(.component) .container .content .content-options {
+        display: flex;
+        align-items: flex-end;
+        width: 40%;
+        height: 100%; }
+        :local(.component) .container .content .content-options .options {
+          margin: 0 0 100px 50px;
+          width: 100%; }
+          :local(.component) .container .content .content-options .options p {
+            cursor: pointer; }

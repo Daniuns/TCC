@@ -1,0 +1,105 @@
+[
+    {
+        "id": 1,
+        "title": "história 1",
+        "description": "Bullying caracteriza-se por uma intimidação sistemática, evidenciando ataques físicos, insultos pessoais, comentários negativos frequentes e apelidos pejorativos. Pode ser praticado de forma verbal, moral (difamação, disseminação de rumores), social (ignorar, excluir, etc), psicológica (amedrontar, perseguir, entre outras coisas) e até virtual (mensagens intimidadoras).",
+        "img": "imagens/bully.png",
+        "vertices":[
+            {
+                "value": "A",
+                "text": "estamos na situação A, o que vamos fazer?",
+                "arestas": [
+                    {
+                        "destino": "B",
+                        "text": "se me selecionar, irei para o ponto B"
+                    },
+                    {
+                        "destino": "C",
+                        "text":"se me selecionar, irei para o ponto C"
+                    }
+                ]
+            },
+            {
+                "value": "B",
+                "text": "estamos na situação B, o que vamos fazer?",
+                "arestas":[
+                    {
+                        "destino": "D",
+                        "text":"Se me selecionar, irei para o ponto D"
+                    }
+                ]
+            },
+            {
+                "value": "C",
+                "text":"estamos na situação C, o que vamos fazer?",
+                "arestas":[
+                    {
+                        "destino":"E",
+                        "text": "se me selecionar, irei para o ponto E"
+                    }
+                ]
+            },
+            {
+                "value": "D",
+                "text": "Fechou o rolê de forma D",
+                "arestas": []
+
+            },
+            {
+                "value": "E",
+                "text": "Fechou o rolê de forma E",
+                "arestas": []
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "história 2",
+        "description": "História 2, fala sobre porradas maneiras",
+        "img": "imagens/bully.png",
+        "vertices":[
+            {
+                "value": "A",
+                "text": "estamos na situação A, o que vamos fazer?",
+                "arestas": [
+                    {
+                        "destino": "A",
+                        "text": "se me selecionar, irei para o ponto A novamente"
+                    },
+                    {
+                        "destino": "B",
+                        "text":"se me selecionar, irei para o ponto B"
+                    }
+                ]
+            },
+            {
+                "value": "B",
+                "text": "estamos na situação B, o que vamos fazer?",
+                "arestas":[
+                    {
+                        "destino": "A",
+                        "text":"Se me selecionar, irei para o ponto A"
+                    },
+                    {
+                        "destino": "C",
+                        "text":"Se me selecionar, irei para o ponto C"
+                    },
+                    {
+                        "destino": "D",
+                        "text":"Se me selecionar, irei para o ponto D"
+                    }
+                ]
+            },
+            {
+                "value": "C",
+                "text": "estamos na situação C, Fechou!",
+                "arestas":[]
+            },
+            {
+                "value": "D",
+                "text": "estamos na situação D, Fechou!",
+                "arestas":[]
+            }
+        ]
+    }
+]
