@@ -41,7 +41,7 @@ class App extends Component {
          <Router>
               <Switch>
                 <Route exact path='/' render={() => <MainScreen selectStory={this.selectStory} story={story}/>} />
-                <Route path='/start' render={() => <GameScreen vertice={vertice}  nextVertice={this.nextVertice}/>} />
+                <Route path='/start' render={() => <GameScreen vertice={vertice}  nextVertice={this.nextVertice}/>} selectStory={this.selectStory}/>
                 <Route path='/stories' render={() => <SelectStory selectStory={this.selectStory} stories={stories}/>}/>
               </Switch>
             </Router>
