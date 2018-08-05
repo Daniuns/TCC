@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import MainScreen from './components/MainScreen';
 import GameScreen from './components/GameScreen';
-// import './App.css';
 import SelectStory from './components/SelectStory/index';
 
 const stories = require("./historias.json");
