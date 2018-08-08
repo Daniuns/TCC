@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import Button from '@material-ui/core/Button';
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+
 // import './App.css';
 
  const style = require('./selectStory.css');
- console.log('ae',style);
 
 class SelectStory extends Component {
 
@@ -21,6 +23,7 @@ class SelectStory extends Component {
     console.log(id);
     this.setState({selected: id});
     this.props.selectStory(id);
+    window.history.back();
   }
   
   render() {
@@ -30,22 +33,39 @@ class SelectStory extends Component {
     
     return (
       <div className={style.component}>
+
+      <style>
+        {`
+          `}
+      </style>
+
         <div className='container'>
+        <h1>Escolha uma História</h1>
         <div className={'stories'}>
           {this.props.stories.map((story, index) => {
             const img = require(`../../${story.img}`);
             return(
+              <Paper classes={{root: 'paper'}} >
               <div onClick={() => this.selected(story.id)} 
               key={index} 
               className={`story ${this.state.selected == story.id ? 'selected' : ''}`}>
-                <h1>{story.title}</h1>
-                {/* <div><img alt='crianças tirando sarro de uma criança' src={img} /></div> */}
+              <Typography variant="headline" component="h1">
+                {story.title}
+              </Typography>
+              <Typography>
+                <div>
+                  <img alt='crianças tirando sarro de uma criança' 
+                  src={img} 
+                  className='img-theme' />
+                </div>
                 <p>{story.description}</p>
+              </Typography>
               </div>
+              </Paper>
             );
           })}
           </div>
-        <Link className='btn-select' to={'/'}><Button variant="contained" color="primary">selecionar</Button></Link>
+        {/* <Link className='btn-select' to={'/'}><Button variant="contained" color="primary">selecionar</Button></Link> */}
         </div>
       </div>
     );

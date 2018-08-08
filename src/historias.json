@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "title": "história 1",
-        "description": "Bullying caracteriza-se por uma intimidação sistemática, evidenciando ataques físicos, insultos pessoais, comentários negativos frequentes e apelidos pejorativos. Pode ser praticado de forma verbal, moral (difamação, disseminação de rumores), social (ignorar, excluir, etc), psicológica (amedrontar, perseguir, entre outras coisas) e até virtual (mensagens intimidadoras).",
+        "title": "Bullying",
+        "description": "O Bullying é muito chato não é mesmo? Vamos explorar algumas situações e descobrir o que pode acontecer",
         "img": "imagens/bully.png",
         "vertices":[
             {
@@ -54,8 +54,8 @@
     },
     {
         "id": 2,
-        "title": "história 2",
-        "description": "História 2, fala sobre porradas maneiras",
+        "title": "Perda",
+        "description": "Perder um amigo, uma mãe, um pai, ou alguém próximo é sempre muito difícil, o que será que podemos fazer?",
         "img": "imagens/bully.png",
         "vertices":[
             {
