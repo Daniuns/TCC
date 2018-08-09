@@ -6,12 +6,12 @@
   :local(.component) .main-container {
     height: 100%;
     display: flex;
-    background-color: #dcc7c0; }
+    background-color: #c7c0bd; }
     @media screen and (max-width: 600px) {
       :local(.component) .main-container {
         height: 100%;
         display: flex;
-        background-color: #dcc7c0;
+        background-color: #c7c0bd;
         flex-direction: column-reverse;
         align-items: center; } }
   :local(.component) .begin-stories {

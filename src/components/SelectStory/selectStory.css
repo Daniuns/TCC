@@ -1,20 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Reenie+Beanie");
+@import url("https://fonts.googleapis.com/css?family=Reenie+Beanie|Rock+Salt");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Reenie+Beanie|Rock+Salt");
 :local(.component) {
-  height: 100%; }
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 1.5rem;
+  background-color: #fffdd0; }
+  @media screen and (min-width: 960px) {
+    :local(.component) {
+      height: 100%; } }
   :local(.component) .container {
+    text-align: center;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column; }
     :local(.component) .container .stories {
+      font-family: 'Reenie Beanie', cursive;
+      padding: 25px;
       height: 90%;
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-around; }
+      @media screen and (max-width: 960px) {
+        :local(.component) .container .stories {
+          flex-direction: column;
+          align-items: center; } }
       :local(.component) .container .stories .story {
         cursor: pointer;
+        width: 100%;
         height: 100%;
-        width: 33.3%;
         text-align: center; }
+        @media screen and (max-width: 960px) {
+          :local(.component) .container .stories .story {
+            width: 100%; } }
         :local(.component) .container .stories .story.selected {
           border: 1px solid; }
+        :local(.component) .container .stories .story .img-theme {
+          width: 100%; }
+      :local(.component) .container .stories .paper {
+        max-width: 300px;
+        padding: 20px;
+        cursor: pointer;
+        background-color: #fff8bf; }
+        :local(.component) .container .stories .paper h1 {
+          font-family: 'Reenie Beanie', cursive;
+          font-size: 2.5rem; }
+        :local(.component) .container .stories .paper p {
+          font-family: 'Dancing Script';
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+          margin: 0; }
+        :local(.component) .container .stories .paper img {
+          max-height: 200px;
+          width: auto; }
+        @media screen and (max-width: 960px) {
+          :local(.component) .container .stories .paper {
+            margin: 10px 0; } }
+        :local(.component) .container .stories .paper:hover {
+          background-color: #ccffcc; }
     :local(.component) .container .btn-select {
       text-align: center; }
