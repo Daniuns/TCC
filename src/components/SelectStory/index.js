@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
-import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 
@@ -48,14 +46,14 @@ class SelectStory extends Component {
               <Paper classes={{root: 'paper'}} >
               <div onClick={() => this.selected(story.id)} 
               key={index} 
-              className={`story ${this.state.selected == story.id ? 'selected' : ''}`}>
+              className={`story ${this.state.selected === story.id ? 'selected' : ''}`}>
               <Typography variant="headline" component="h1">
                 {story.title}
               </Typography>
               <Typography>
                 <div>
                   <img alt='crianças tirando sarro de uma criança' 
-                  src={img} 
+                  src={img}
                   className='img-theme' />
                 </div>
                 <p>{story.description}</p>

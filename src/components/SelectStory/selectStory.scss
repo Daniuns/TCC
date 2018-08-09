@@ -3,9 +3,9 @@
     @import url('https://fonts.googleapis.com/css?family=Reenie+Beanie|Rock+Salt');
     @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Reenie+Beanie|Rock+Salt');
     font-family: 'Reenie Beanie', cursive;
-    font-family: 3rem;
-    background-color: #c7c0bd;
-    @media screen and (min-width: 700px){
+    font-size: 1.5rem;
+    background-color: #fffdd0;
+    @media screen and (min-width: 960px){
         height: 100%;
     }
     .container{
@@ -16,7 +16,7 @@
         flex-direction: column;
         .stories{
             font-family: 'Reenie Beanie', cursive;
-            @media screen and (max-width: 700px){
+            @media screen and (max-width: 960px){
                 flex-direction: column;
                 align-items: center;
             }
@@ -26,7 +26,7 @@
             justify-content: space-around;
             .story{
                 
-                @media screen and (max-width: 700px){
+                @media screen and (max-width: 960px){
                     width: 100%;
                 }
                 &.selected{
@@ -43,23 +43,29 @@
             .paper{
                 h1{
                     font-family: 'Reenie Beanie', cursive;
+                    font-size: 2.5rem;                    
                 }
                 p{
                     font-family: 'Dancing Script';
                     font-size: 1.5rem;
                     line-height: 2.5rem;
+                    margin: 0;
+                }
+                img{
+                    max-height: 200px;
+                    width: auto;
                 }
 
-                @media screen and(max-width: 700px) {
+                @media screen and(max-width: 960px) {
                     margin: 10px 0;
                 }
                 &:hover{
-                    background-color: #ccc;
+                    background-color: #ccffcc;
                     }
                 max-width: 300px;
                 padding: 20px;
                 cursor: pointer;
-                background-color: #dedede;
+                background-color: #fff8bf;
             }
         }
         .btn-select{

@@ -56,7 +56,7 @@
         "id": 2,
         "title": "Perda",
         "description": "Perder um amigo, uma mãe, um pai, ou alguém próximo é sempre muito difícil, o que será que podemos fazer?",
-        "img": "imagens/bully.png",
+        "img": "imagens/death.png",
         "vertices":[
             {
                 "value": "A",
