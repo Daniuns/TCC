@@ -1,4 +1,6 @@
 :local(.component){
+    @import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
+    @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Reenie+Beanie|Rock+Salt');
     height: 100%;
     width: 100%;
     .App{
@@ -6,20 +8,20 @@
     }
     
     .main-container{
+        
         height: 100%;
         display: flex;
-        background-color: #c7c0bd;
-        @media screen and (max-width: 600px){
+        background-color: #fff8bf;        
+        @media screen and (max-width: 960px){
             height: 100%;
             display: flex;
-            background-color: #c7c0bd;
             flex-direction: column-reverse;
             align-items: center;
         }
     }
     
     .begin-stories{
-        @media screen and(max-width: 600px){
+        @media screen and(max-width: 960px){
             height: 20%;
         }
         width: 20%;
@@ -29,6 +31,12 @@
         justify-content: center;
         .btn-options{
             margin: 0 0 45% 0;
+            a{
+                font-size: 1.875rem;
+                font-family: 'Reenie Beanie', cursive;
+                text-decoration: none;
+                color: black;
+            }
             p {
                 cursor: pointer;                
             }
@@ -41,17 +49,24 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        @media screen and (max-width: 600px){
+        @media screen and (max-width: 960px){
             height: 80%;
         }
         .description{
-            @media screen and (max-width: 600px){
+            font-family: 'Dancing Script';
+            font-size: 1.5rem;
+            width: 50%;
+            @media screen and (max-width: 960px){
                 width: 100%;
             }
-            width: 50%;
         }
+
+        .title{
+            font-family: 'Reenie Beanie', cursive;
+        }
+
         .photo {
-            @media screen and (max-width: 600px){
+            @media screen and (max-width: 960px){
                 width: 100%;
                 display: flex;
                 justify-content: center;
@@ -59,7 +74,7 @@
             img{
                 width: 100%;
                 max-width: 500px;
-                height: auto;
+                max-height: 300px;
             }    
         }
     }

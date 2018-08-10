@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Reenie+Beanie");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Reenie+Beanie|Rock+Salt");
 :local(.component) {
   height: 100%;
   width: 100%; }
@@ -6,12 +8,11 @@
   :local(.component) .main-container {
     height: 100%;
     display: flex;
-    background-color: #c7c0bd; }
-    @media screen and (max-width: 600px) {
+    background-color: #fff8bf; }
+    @media screen and (max-width: 960px) {
       :local(.component) .main-container {
         height: 100%;
         display: flex;
-        background-color: #c7c0bd;
         flex-direction: column-reverse;
         align-items: center; } }
   :local(.component) .begin-stories {
@@ -20,11 +21,16 @@
     display: flex;
     align-items: flex-end;
     justify-content: center; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 960px) {
       :local(.component) .begin-stories {
         height: 20%; } }
     :local(.component) .begin-stories .btn-options {
       margin: 0 0 45% 0; }
+      :local(.component) .begin-stories .btn-options a {
+        font-size: 1.875rem;
+        font-family: 'Reenie Beanie', cursive;
+        text-decoration: none;
+        color: black; }
       :local(.component) .begin-stories .btn-options p {
         cursor: pointer; }
   :local(.component) .title-description {
@@ -33,15 +39,19 @@
     display: flex;
     align-items: center;
     flex-direction: column; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 960px) {
       :local(.component) .title-description {
         height: 80%; } }
     :local(.component) .title-description .description {
+      font-family: 'Dancing Script';
+      font-size: 1.5rem;
       width: 50%; }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 960px) {
         :local(.component) .title-description .description {
           width: 100%; } }
-    @media screen and (max-width: 600px) {
+    :local(.component) .title-description .title {
+      font-family: 'Reenie Beanie', cursive; }
+    @media screen and (max-width: 960px) {
       :local(.component) .title-description .photo {
         width: 100%;
         display: flex;
@@ -49,4 +59,4 @@
     :local(.component) .title-description .photo img {
       width: 100%;
       max-width: 500px;
-      height: auto; }
+      max-height: 300px; }
