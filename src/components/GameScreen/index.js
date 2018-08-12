@@ -9,12 +9,16 @@ export default class GameScreen extends Component {
         if(!this.props){
             return <div>Aguarde...</div>
         }
+
+        const img = require(`../../${this.props.vertice.img}`);
+
         return(
             <div className={style.component}>
                 <div className='container'>
                     <div className='content'>
                         <div className='description-scene'>
                             {this.props.vertice.text}
+                            <img alt='img descretiva' src={img} />
                         </div>
                         <div className='content-options'>
                             <div className='options'>

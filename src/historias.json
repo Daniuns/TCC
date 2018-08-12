@@ -8,6 +8,7 @@
             {
                 "value": "A",
                 "text": "estamos na situação A, o que vamos fazer?",
+                "img": "imagens/bully.png",
                 "arestas": [
                     {
                         "destino": "B",
@@ -22,6 +23,7 @@
             {
                 "value": "B",
                 "text": "estamos na situação B, o que vamos fazer?",
+                "img": "imagens/bully.png",
                 "arestas":[
                     {
                         "destino": "D",
@@ -32,6 +34,7 @@
             {
                 "value": "C",
                 "text":"estamos na situação C, o que vamos fazer?",
+                "img": "imagens/bully.png",
                 "arestas":[
                     {
                         "destino":"E",
@@ -41,12 +44,14 @@
             },
             {
                 "value": "D",
+                "img": "imagens/bully.png",
                 "text": "Fechou o rolê de forma D",
                 "arestas": []
 
             },
             {
                 "value": "E",
+                "img": "imagens/bully.png",
                 "text": "Fechou o rolê de forma E",
                 "arestas": []
             }
@@ -61,6 +66,7 @@
             {
                 "value": "A",
                 "text": "estamos na situação A, o que vamos fazer?",
+                "img": "imagens/death.png",
                 "arestas": [
                     {
                         "destino": "A",
@@ -75,6 +81,7 @@
             {
                 "value": "B",
                 "text": "estamos na situação B, o que vamos fazer?",
+                "img": "imagens/death.png",
                 "arestas":[
                     {
                         "destino": "A",
@@ -93,11 +100,13 @@
             {
                 "value": "C",
                 "text": "estamos na situação C, Fechou!",
+                "img": "imagens/death.png",
                 "arestas":[]
             },
             {
                 "value": "D",
                 "text": "estamos na situação D, Fechou!",
+                "img": "imagens/death.png",
                 "arestas":[]
             }
         ]

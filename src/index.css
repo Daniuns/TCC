@@ -2,6 +2,7 @@ html, #root{
   height: 100%;
 }
 body {
+  background-color: #fffdd0;
   height: 100%;
   margin: 0;
   padding: 0;
