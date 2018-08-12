@@ -28,7 +28,7 @@ class MainScreen extends Component {
             </div>
 
             <div className="title-description">
-              <h1>{this.props.story.title}</h1>
+              <h1 className="title">{this.props.story.title}</h1>
               <div className="photo">
                 <img alt='crianças tirando sarro de uma criança' src={img} />
               </div>
