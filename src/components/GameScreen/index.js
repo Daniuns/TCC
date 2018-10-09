@@ -12,6 +12,22 @@ export default class GameScreen extends Component {
 
         const img = require(`../../${this.props.vertice.img}`);
 
+        if(this.props.vertice.arestas.length < 1){
+            return(
+                <div className={style.component}>
+                    <div className='container'>
+                        <div className='content finalScreen'>
+                            <div className='description-scene finalScreen'>
+                                {this.props.vertice.text}
+                                <img alt='img descretiva' src={img} />
+                            </div>
+                        <Link to='/' onClick={() => this.props.SelectStory(1)} className="start"> Inicio </Link>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
         return(
             <div className={style.component}>
                 <div className='container'>
@@ -31,7 +47,7 @@ export default class GameScreen extends Component {
                             })}
                             </div>
                         </div>
-                        {this.props.vertice.arestas.length < 1 ? <Link to='/' onClick={() => this.props.SelectStory(1)}> Inicio </Link> : '' }
+                        
                     </div>
                 </div>
             </div>

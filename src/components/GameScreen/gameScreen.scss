@@ -1,6 +1,7 @@
 :local(.component){
     @import url('https://fonts.googleapis.com/css?family=Reenie+Beanie|Rock+Salt');
     @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Reenie+Beanie|Rock+Salt');
+    @import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC');
     height: 100%;
     .container{
         height: 100%;
@@ -10,12 +11,16 @@
             flex-direction: row-reverse;
             height: 100%;
 
+            &.finalScreen{
+                flex-direction: column;
+            }
+
             @media screen and (max-width: 960px) {
                 flex-direction: column;
             }
 
             .description-scene{
-                font-family: 'Dancing Script';
+                font-family: 'Patrick Hand SC';
                 font-size: 1.5rem;
                 width: 70%;
                 text-align: center;
@@ -36,8 +41,23 @@
                         max-height: 300px;
                     }
                 }
+
+                &.finalScreen{
+                    width: 100%;
+                    min-height: 55%;
+                    max-height: 55%;
+                }
+                
             }
-        
+            
+            .start{
+                font-family: 'Reenie Beanie', cursive;
+                font-size: 1.5rem;
+                text-align: center;
+                text-decoration: none;
+                color: black;
+            }
+
             .content-options{
                 display: flex;
                 align-items: flex-end;
