@@ -1,6 +1,8 @@
 :local(.component){
     @import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
     @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Reenie+Beanie|Rock+Salt');
+    @import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC');
+    
     height: 100%;
     width: 100%;
     .App{
@@ -11,7 +13,6 @@
         
         height: 100%;
         display: flex;
-        background-color: #fff8bf;        
         @media screen and (max-width: 960px){
             height: 100%;
             display: flex;
@@ -53,7 +54,7 @@
             height: 80%;
         }
         .description{
-            font-family: 'Dancing Script';
+            font-family: 'Patrick Hand SC';
             font-size: 1.5rem;
             width: 50%;
             @media screen and (max-width: 960px){
