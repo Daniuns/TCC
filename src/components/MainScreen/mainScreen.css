@@ -31,8 +31,12 @@
         font-family: 'Reenie Beanie', cursive;
         text-decoration: none;
         color: black; }
-      :local(.component) .begin-stories .btn-options p {
+      :local(.component) .begin-stories .btn-options .menu {
+        transition: all 0.3s ease-in-out;
         cursor: pointer; }
+        :local(.component) .begin-stories .btn-options .menu:hover {
+          text-shadow: 1px 1px 1px #000;
+          transform: scale(1.1); }
   :local(.component) .title-description {
     width: 80%;
     height: 100%;

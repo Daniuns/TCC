@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import Fade  from '@material-ui/core/Fade';
 // import './App.css';
 
 const style = require('./mainScreen.css');
@@ -17,13 +18,14 @@ class MainScreen extends Component {
     const img = require(`../../${this.props.story.img}`);
 
     return (
+      <Fade in={true} timeout={{enter: 500}}>
       <div className={style.component}>
         <div className='App'>
           <div className="main-container">
             <div className="begin-stories">
               <div className="btn-options">
-                <Link to='/start'><p>Iniciar</p></Link>
-                <Link to='/stories'>Histórias</Link>
+                <Link to='/start'><div className={'menu'}>Iniciar</div></Link>
+                <Link to='/stories'><div className={'menu'}>Histórias</div></Link>
               </div>
             </div>
 
@@ -39,6 +41,7 @@ class MainScreen extends Component {
           </div>
         </div>
       </div>
+      </Fade>
     );
   }
 }

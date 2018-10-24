@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
+import Grow from '@material-ui/core/Grow';
+
 
 // import './App.css';
 
@@ -32,34 +34,35 @@ class SelectStory extends Component {
     return (
       <div className={style.component}>
 
-      <style>
-        {`
-          `}
-      </style>
-
         <div className='container'>
         <h1>Escolha uma História</h1>
         <div className={'stories'}>
           {this.props.stories.map((story, index) => {
             const img = require(`../../${story.img}`);
             return(
-              <Paper classes={{root: 'paper'}} >
-              <div onClick={() => this.selected(story.id)} 
-              key={index} 
-              className={`story ${this.state.selected === story.id ? 'selected' : ''}`}>
-              <Typography variant="headline" component="h1">
-                {story.title}
-              </Typography>
-              <Typography>
-                <div>
-                  <img alt='crianças tirando sarro de uma criança' 
-                  src={img}
-                  className='img-theme' />
+              <Grow
+                in={true}
+                style={{ transformOrigin: '0 0 0' }}
+                {...(true ? { timeout: 1000 } : {})}
+              >
+                <Paper classes={{root: 'paper'}} >
+                <div onClick={() => this.selected(story.id)} 
+                key={index} 
+                className={`story ${this.state.selected === story.id ? 'selected' : ''}`}>
+                <Typography variant="headline" component="h1">
+                  {story.title}
+                </Typography>
+                <Typography>
+                  <div>
+                    <img alt='crianças tirando sarro de uma criança' 
+                    src={img}
+                    className='img-theme' />
+                  </div>
+                  <p>{story.description}</p>
+                </Typography>
                 </div>
-                <p>{story.description}</p>
-              </Typography>
-              </div>
-              </Paper>
+                </Paper>
+              </Grow>
             );
           })}
           </div>

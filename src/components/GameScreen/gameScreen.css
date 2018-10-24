@@ -11,7 +11,15 @@
       flex-direction: row-reverse;
       height: 100%; }
       :local(.component) .container .content.finalScreen {
-        flex-direction: column; }
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto; }
+        :local(.component) .container .content.finalScreen p {
+          transition: all 0.3s ease-in-out; }
+          :local(.component) .container .content.finalScreen p:hover {
+            text-shadow: 1px 1px 1px #000;
+            transform: scale(1.1); }
       @media screen and (max-width: 960px) {
         :local(.component) .container .content {
           flex-direction: column; } }
@@ -32,10 +40,6 @@
             width: 100%; }
             :local(.component) .container .content .description-scene img {
               max-height: 300px; } }
-        :local(.component) .container .content .description-scene.finalScreen {
-          width: 100%;
-          min-height: 55%;
-          max-height: 55%; }
       :local(.component) .container .content .start {
         font-family: 'Reenie Beanie', cursive;
         font-size: 1.5rem;
@@ -62,4 +66,8 @@
           :local(.component) .container .content .content-options .options p {
             font-family: 'Reenie Beanie', cursive;
             font-size: 1.5rem;
-            cursor: pointer; }
+            cursor: pointer;
+            transition: all 0.3s ease-in-out; }
+            :local(.component) .container .content .content-options .options p:hover {
+              text-shadow: 1px 1px 1px #000;
+              transform: scale(1.1); }
