@@ -37,6 +37,7 @@
         :local(.component) .container .stories .story .img-theme {
           width: 100%; }
       :local(.component) .container .stories .paper {
+        transition: all 0.3s ease-in-out;
         max-width: 300px;
         padding: 20px;
         cursor: pointer;
@@ -56,6 +57,7 @@
           :local(.component) .container .stories .paper {
             margin: 10px 0; } }
         :local(.component) .container .stories .paper:hover {
+          transform: scale(1.1);
           background-color: #ccffcc; }
     :local(.component) .container .btn-select {
       text-align: center; }

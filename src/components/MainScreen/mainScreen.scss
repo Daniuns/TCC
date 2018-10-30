@@ -38,8 +38,13 @@
                 text-decoration: none;
                 color: black;
             }
-            p {
-                cursor: pointer;                
+            .menu{
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    text-shadow: 1px 1px 1px #000;
+                    transform: scale(1.1);                    
+                }
+                cursor: pointer;                                
             }
         }   
     }
